@@ -8,7 +8,6 @@ const Home = lazy(() => import('./Pages/Home'))
 const Repos = lazy(() => import('./Pages/Repos'))
 const Repo = lazy(() => import('./Pages/Repo'))
 const ErrorBoundary = lazy(() => import("./Pages/ErrorBoundary"));
-// const Loader = lazy(() => import("./utility/loader"));
 const ErrorPage = lazy(() => import("./Pages/ErrorPage"));
 const Loader = () => {
   return(

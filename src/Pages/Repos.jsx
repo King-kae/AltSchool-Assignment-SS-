@@ -1,7 +1,16 @@
 import useFetchUrl from "../hooks/useFetchUrl"
 import { Outlet } from "react-router-dom"
+import { SyncLoader } from "react-spinners";
+import RepoMain from "../components/Repos/RepoMain";
+import RepoHeader from "../components/Repos/RepoHeader";
 // import Loader from "../utility/Loader";
-
+const Loader = () => {
+    return(
+        <div className="loader">
+            <SyncLoader color="#000" />
+        </div>
+    )
+  }
 const Repos = () => {
     const { data: headerData, isLoading: headerLoader } = useFetchUrl(
         "https://api.github.com/users/King-kae",
@@ -14,20 +23,29 @@ const Repos = () => {
     
     if( headerLoader || reposLoader ) return <Loader />;
 
-    console.log({ headerData, reposData })
+    // console.log({ headerData, reposData })
 
     return (
-        <div>
-            <h1>{headerData.name}</h1>
-            <img src={headerData.avatar_url} alt={headerData.name} />
-            <h2>Repositories</h2>
-            <ul>
-                {reposData.map((repo) => (
-                    <li key={repo.id}>{repo.name}</li>
-                ))}
-            </ul>
+        <section>
+            <div>
+                <RepoHeader repoData={headerData} />
+                <RepoMain repos={reposData} />
+                {/* <h2>{headerData.login}</h2> */}
+                {/* <p>{reposData.map((repo) => {
+                    return (
+                        <li key={repo.id}>
+                            <h3>{repo.name}</h3>
+                            <p>{repo.description}</p>
+                            <div>
+                                <p>{repo.language}</p>
+                                <p>{repo.stargazers_count}</p>
+                            </div>
+                        </li>
+                    )
+                })}</p> */}
+            </div>
             <Outlet />
-        </div>
+        </section>
 
     )
 }
