@@ -19,14 +19,7 @@ const About = () => {
           <li>An error page</li>
           <li>Routing using react router</li>
           <li className='flex justify-center items-center gap-x-2'>
-            Fetching of Api from{" "}
-            <a
-              href='https://docs.github.com/en/rest'
-              target='_blank'
-              className='bg-yellow-400 dark:text-neutral-50 block w-32 py-1 rounded-full text-center'
-            >
-              github api
-            </a>
+            Fetching of Api from github api
           </li>
         </ul>
       </div>

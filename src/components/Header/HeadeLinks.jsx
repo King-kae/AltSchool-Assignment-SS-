@@ -10,7 +10,7 @@ const HeaderLinks = () => {
             
             className="hidden md:flex justify-center flexBasis-5/7 -mt-1 ml-8 gap-x-6 md:gap-x-8 md:mr-0 text-xl"
         >
-            <motion.li className={`z-10`}>
+            <motion.li className={`z-10 hover:text-blue transition duration-500 ease-in-out`}>
                 <NavLink
                     to="/repos"
 
@@ -19,7 +19,7 @@ const HeaderLinks = () => {
                     Repos
                 </NavLink>
             </motion.li>
-            <li className="z-10">
+            <li className="z-10 hover:text-blue transition duration-500 ease-in-out">
                 <NavLink
                     to="/about"
 
@@ -28,7 +28,7 @@ const HeaderLinks = () => {
                     About
                 </NavLink>
             </li>
-            <li className="z-10">
+            <li className="z-10 hover:text-blue transition duration-500 ease-in-out">
                 <NavLink
                     to="/errorpage"
 
@@ -37,7 +37,7 @@ const HeaderLinks = () => {
                     404
                 </NavLink>
             </li>
-            <li className="z-10">
+            <li className="z-10 hover:text-blue transition duration-500 ease-in-out">
                 <NavLink
                     to="/errorboundary"
 

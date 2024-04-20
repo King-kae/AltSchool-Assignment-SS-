@@ -93,7 +93,7 @@ const Home = () => {
                         <motion.img
                             src={pic}
                             alt="github octocat"
-                            className='w-[26.25rem] py-4 aspect-square  absolute top-[10%]  md:top-[17%] object-contain'
+                            className='md:w-[26.25rem] p-8 aspect-square w-44 absolute top-[10%]  md:top-[17%] lg:right-[20%] object-contain'
                             layoutId='entranceImg'
                             />
                     </div>

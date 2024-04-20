@@ -42,7 +42,7 @@ const Header = () => {
               {theme === "light" ? <IoMoonOutline /> : <IoSunnySharp />}
             </button>
           </div>
-          <HeaderMenuBtn open={openMenu} toggleMenu={handleMenu} />
+          <HeaderMenuBtn openMenu={openMenu} toggleMenu={handleMenu} />
         </nav>
          <HeaderMenu open={openMenu} theme={theme} handleTheme={handleTheme} /> 
       </header>
