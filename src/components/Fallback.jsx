@@ -10,7 +10,7 @@ function Fallback({ error, resetErrorBoundary }) {
         </p>
         <button
           onClick={resetErrorBoundary}
-          className='bg-gitGreen text-neutral-50 py-2 px-3'
+          className='bg-yellow-400 text-neutral-50 py-2 px-3'
         >
           Go Back Home
         </button>

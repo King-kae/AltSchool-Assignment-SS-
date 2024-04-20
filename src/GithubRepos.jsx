@@ -1,6 +1,6 @@
 import { ErrorBoundary } from "react-error-boundary";
 import { useNavigate } from "react-router-dom";
-
+import './index.css'
 import App from "./App";
 import Fallback from "./components/Fallback";
 

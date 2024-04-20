@@ -19,6 +19,17 @@ const letterContainer = {
         y: 100,
     },
 };
+const letters = {
+    hidden: { opacity: 0, y: 100 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 0.5,
+        },
+    },
+};
 const Home = () => {
     const text1 = "Hello";
     const text2 = "Welcome to my GitHub";
@@ -27,45 +38,53 @@ const Home = () => {
     return (
         <div>
             <div>
-                <div>
+                <div className='dark:bg-[#2C2C2C] bg-neutral-50 flex lg:justify-center items-center  h-screen pl-4 fixed left-0 top-0 w-full md:w-[65%] md:p-0 transition-colors duration-300'>
                     <motion.div
-                        className="text-5xl font-bold text-center"
+                        className="pl-4 md:pl-8  mt-24 md:mt-0"
                         variants={letterContainer}
                         initial="hidden"
                         animate="show"
                         exit="exit"
                     >
-                        {text1.split("").map((letter, index) => (
-                            <motion.span key={index} variants={letterContainer}>
-                                {letter}
-                            </motion.span>
-                        ))}
-                    </motion.div>
-                    <motion.div
-                        className="text-5xl font-bold text-center"
-                        variants={letterContainer}
-                        initial="hidden"
-                        animate="show"
-                        exit="exit"
-                    >
-                        {text2.split("").map((letter, index) => (
-                            <motion.span key={index} variants={letterContainer}>
-                                {letter}
-                            </motion.span>
-                        ))}
-                    </motion.div>
-                    <motion.div
-                        className="text-5xl font-bold text-center"
-                        variants={letterContainer}
-                        initial="hidden"
-                        animate="show"
-                        exit="exit"
-                    >
-                        {text3.split("").map((letter, index) => (
-                            <motion.span key={index} variants={letterContainer}>
-                                {letter}
-                            </motion.span>
-                        ))}
+                        <motion.h1
+                            className="font-playfair dark:text-neutral-50 text-zinc-700  max-w-[22.125rem] text-2xl leading-[2rem] md:max-w-xl md:text-5xl md:leading-[3.75rem] overflow-hidden transition-colors duration-300"
+                            variants={letterContainer}
+                            initial='hidden'
+                            animate='show'
+                        >
+                            {text1.split("").map((letter, index) => (
+                                <motion.span key={index} variants={letterContainer}>
+                                    {letter}
+                                </motion.span>
+                            ))}
+                            , <br />
+                            {text2.split("").map((letter, index) => (
+                                <motion.span key={index} variants={letterContainer}>
+                                    {letter}
+                                </motion.span>
+                            ))}
+                            , <br />
+                            {text3.split("").map((letter, index) => (
+                                <motion.span key={index} variants={letterContainer}>
+                                    {letter}
+                                </motion.span>
+                            ))}
+
+                        </motion.h1>
+                        <motion.div
+                            className="text-5xl font-bold text-center"
+                            variants={letterContainer}
+                            initial="hidden"
+                            animate="show"
+                            exit="exit"
+                        >
+                            <Link 
+                                to='/repos' 
+                                className='bg-yellow-400 text-center font-playfair text-xl block  px-3 py-2 mt-8 w-full transition-colors duration-500 dark:hover:bg-zinc-700 dark:text-neutral-50 text-zinc-700 hover:text-neutral-50 hover:bg-zinc-700'
+                            >
+                                Go to Repos
+                            </Link>
+                        </motion.div>
                     </motion.div>
                 </div>
             </div>
