@@ -11,11 +11,11 @@ const HeaderMenuBtn = ({ openMenu, toggleMenu }) => {
                     }`}
             ></span>
             <span
-                className={`bg-zinc-700 dark:bg-neutral-50 w-6 h-0.5 block transition-transform duration-500 ${openMenu ? "translate-x-1 translate-y-2 rotate-45" : ""
+                className={`bg-blue dark:bg-neutral-50 w-6 h-0.5 block transition-transform duration-500 ${openMenu ? "bg-red-700 translate-x-1 translate-y-2 rotate-45" : ""
                     }`}
             ></span>
             <span
-                className={`bg-zinc-700 dark:bg-neutral-50 w-8 h-0.5 block transition-transform duration-500 ${openMenu ? "-rotate-45" : ""
+                className={`bg-zinc-700 dark:bg-neutral-50 w-8 h-0.5 block transition-transform duration-500 ${openMenu ? "bg-red-700 -rotate-45" : ""
                     }`}
             ></span>
         </button>

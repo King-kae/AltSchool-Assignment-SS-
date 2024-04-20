@@ -13,6 +13,9 @@ module.exports = {
     },
 
     extend: {
+      gridTemplateColumns: {
+        1: 'repeat(auto-fit, minmax(238px, 1fr))'
+      },
       flexBasis: {
         '1/7': '14.2857143%',
         '2/7': '28.5714286%',

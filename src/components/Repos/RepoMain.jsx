@@ -21,7 +21,7 @@ const RepoMain = ({ repos }) => {
     <>
       <main className="md:col-span-2">
         <RepoForm value={value} setValue={setValue} />
-        <ul className="text-repoColor dark:text-[#d9cccc]">
+        <ul className="text-repoColor dark:text-[#d9cccc] grid ss:grid-cols-2 gap-2">
           {filteredRepo.slice(indexOfFirstRepo, indexOfLastRepo).map((repo) => (
             <RepoCard key={repo.id} repo={repo} />
           ))}
