@@ -4,6 +4,8 @@ import { IoMoonOutline, IoSunnySharp } from "react-icons/io5";
 import HeaderLinks from "./HeadeLinks";
 import HeaderMenu from "./HeaderMenu";
 import HeaderMenuBtn from "./HeaderMenuBtn";
+import { FaHome } from "react-icons/fa";
+
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -31,7 +33,7 @@ const Header = () => {
                 className='text-2xl md:text-4xl font-josefin dark:text-neutral-50'
                 end
             >
-                Home
+                {FaHome}
             </NavLink>
           </p>
           <HeaderLinks />

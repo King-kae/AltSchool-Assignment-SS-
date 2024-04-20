@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
-import pic from "../assets/github-svgrepo-com.svg"
+import pic from "../assets/react.svg"
 
 
 const letterContainer = {
@@ -58,7 +58,7 @@ const Home = () => {
                                     {letter}
                                 </motion.span>
                             ))}
-                            , <br />
+                            ! <br />
                             {text2.split("").map((letter, index) => (
                                 <motion.span key={index} variants={letterContainer}>
                                     {letter}
@@ -81,7 +81,7 @@ const Home = () => {
                         >
                             <Link 
                                 to='/repos' 
-                                className='bg-yellow-400 text-center font-playfair text-xl rounded-full block  px-3 py-2 mt-8 w-full transition-colors duration-500 dark:hover:bg-zinc-700 dark:text-neutral-50 text-zinc-700 hover:text-neutral-50 hover:bg-zinc-700'
+                                className='hover:bg-blue-400 hover:shadow-blue-500/50  text-center font-playfair text-xl rounded-full block  px-3 py-2 mt-8 w-full transition-colors duration-500 :bg-zinc-700 dark:text-neutral-50  text-neutral-50 bg-zinc-700'
                             >
                                 Go to Repos
                             </Link>
@@ -89,11 +89,11 @@ const Home = () => {
                     </motion.div>
                 </div>
                 <div>
-                    <div className='bg-yellow-400 w-[45%] fixed right-5 h-[12.5rem] top-[15%] md:w-[35%] md:top-0 md:right-0 md:h-screen '>
+                    <div className='bg-black w-[45%] fixed right-5 h-[12.5rem] top-[15%] md:w-[35%] md:top-68px md:right-0 md:h-screen '>
                         <motion.img
                             src={pic}
                             alt="github octocat"
-                            className='w-[26.25rem]'
+                            className='w-[26.25rem] aspect-square  absolute top-[10%]  md:top-[25%] object-contain'
                             layoutId='entranceImg'
                             />
                     </div>

@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom"
 
 
 const HeaderLinks = () => {
-    const activeClassName = "font-bold"
+    const activeClassName = "font-bold text-blue-700"
 
     return (
         <ul
             
-            className="hidden md:flex justify-center basis-1/2 -mt-1 ml-8 gap-x-6 md:gap-x-8 md:mr-0 text-xl"
+            className="hidden md:flex justify-center flexBasis-5/7 -mt-1 ml-8 gap-x-6 md:gap-x-8 md:mr-0 text-xl"
         >
             <motion.li className={`z-10`}>
                 <NavLink
