@@ -19,14 +19,17 @@ const RepoMain = ({ repos }) => {
 
   return (
     <>
-      <main>
+      <main className="md:col-span-2">
         <RepoForm value={value} setValue={setValue} />
-        <ul>
+        <ul className="text-repoColor dark:text-[#d9cccc]">
           {filteredRepo.slice(indexOfFirstRepo, indexOfLastRepo).map((repo) => (
             <RepoCard key={repo.id} repo={repo} />
           ))}
         </ul>
-        <div>
+        <div 
+          className={`flex flex-col items-start gap-y-3  md:flex-row justify-between md:items-center py-8 border-t border-grey-100  dark:border-neutral-400 ${value ? "hidden" : ""
+          }`}
+        >
           <button disabled={page <= 1} onClick={() => setPage((p) => p - 1)}>
             <FaArrowCircleLeft />
           </button>
@@ -34,11 +37,10 @@ const RepoMain = ({ repos }) => {
             {Array.from({ length: pageLength }, (_, i) => i + 1).map((btn) => (
               <button
                 key={`${btn}-i`}
-                className={`${
-                  page === btn
+                className={`${page === btn
                     ? "bg-gitGreen text-neutral-50"
                     : "bg-neutral-200 dark:bg-neutral-700"
-                }  px-3 transition-colors duration-300`}
+                  }  px-3 transition-colors duration-300`}
                 onClick={() => setPage(btn)}
               >
                 {btn}

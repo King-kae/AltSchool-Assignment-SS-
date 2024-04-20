@@ -23,7 +23,7 @@ const About = () => {
             <a
               href='https://docs.github.com/en/rest'
               target='_blank'
-              className='bg-yellow-400 dark:text-neutral-50 block w-24 py-1 text-center'
+              className='bg-yellow-400 dark:text-neutral-50 block w-32 py-1 rounded-full text-center'
             >
               github api
             </a>

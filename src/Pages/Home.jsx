@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
+import pic from "../assets/github-svgrepo-com.svg"
 
 
 const letterContainer = {
@@ -72,7 +73,7 @@ const Home = () => {
 
                         </motion.h1>
                         <motion.div
-                            className="text-5xl font-bold text-center"
+                            className="text-5xl font-bold text-center w-[13rem]"
                             variants={letterContainer}
                             initial="hidden"
                             animate="show"
@@ -80,12 +81,22 @@ const Home = () => {
                         >
                             <Link 
                                 to='/repos' 
-                                className='bg-yellow-400 text-center font-playfair text-xl block  px-3 py-2 mt-8 w-full transition-colors duration-500 dark:hover:bg-zinc-700 dark:text-neutral-50 text-zinc-700 hover:text-neutral-50 hover:bg-zinc-700'
+                                className='bg-yellow-400 text-center font-playfair text-xl rounded-full block  px-3 py-2 mt-8 w-full transition-colors duration-500 dark:hover:bg-zinc-700 dark:text-neutral-50 text-zinc-700 hover:text-neutral-50 hover:bg-zinc-700'
                             >
                                 Go to Repos
                             </Link>
                         </motion.div>
                     </motion.div>
+                </div>
+                <div>
+                    <div className='bg-yellow-400 w-[45%] fixed right-5 h-[12.5rem] top-[15%] md:w-[35%] md:top-0 md:right-0 md:h-screen '>
+                        <motion.img
+                            src={pic}
+                            alt="github octocat"
+                            className='w-[26.25rem]'
+                            layoutId='entranceImg'
+                            />
+                    </div>
                 </div>
             </div>
         </div>
