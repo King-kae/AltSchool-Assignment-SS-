@@ -29,6 +29,7 @@ module.exports = {
         yellow: {
           400: "#FFB633",
         },
+        blue: '#61DBFB',
         sky: {
           500: "rgb(9, 105, 218)",
         },

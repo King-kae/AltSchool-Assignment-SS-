@@ -29,7 +29,7 @@ const ErrorPage = () => {
           <span className='text-xl'>You're tresspassing</span>{" "}
           <Link
             to='/'
-            className='hover:bg-yellow-400 text-lg block w-36 rounded-full shadow-xl hover:shadow-yellow-500/50   py-1 bg-zinc-700 text-neutral-50 duration-300 transition-colors'
+            className='hover:bg-blue text-lg block w-36 rounded-full shadow-xl hover:shadow-blue   py-1 bg-zinc-700 text-neutral-50 duration-300 transition-colors'
           >
             Go Home 
           </Link>

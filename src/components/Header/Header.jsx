@@ -33,7 +33,7 @@ const Header = () => {
                 className='text-2xl md:text-4xl font-josefin dark:text-neutral-50'
                 end
             >
-                {FaHome}
+                <FaHome className="text-blue" />
             </NavLink>
           </p>
           <HeaderLinks />

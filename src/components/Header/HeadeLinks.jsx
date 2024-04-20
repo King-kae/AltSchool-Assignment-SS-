@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 
 const HeaderLinks = () => {
-    const activeClassName = "font-bold text-blue-700"
+    const activeClassName = "font-bold text-blue"
 
     return (
         <ul
