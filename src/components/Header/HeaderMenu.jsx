@@ -63,7 +63,7 @@ const HeaderMenu = ({ open, theme, handleTheme }) => {
                 <NavLink to='/errorboundary'>Error Boundary</NavLink>
             </motion.li>
             <motion.li variants={liVariants} className='z-10 hover:text-blue transition duration-500 ease-in-out'>
-                <button aria-label='toggle theme' onClick={handleTheme}>
+                <button className='invisible' aria-label='toggle theme' onClick={handleTheme}>
                     {theme === 'light' ? <IoMoonOutline className='w-5 h-5' /> : <IoSunnySharp className='w-5 h-5' />}
                 </button>
             </motion.li>

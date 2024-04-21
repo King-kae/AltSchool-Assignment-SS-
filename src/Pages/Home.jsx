@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
 import pic from "../assets/react.svg"
-import './home.css'
 
 const letterContainer = {
     hidden: {
@@ -20,17 +19,7 @@ const letterContainer = {
         y: 100,
     },
 };
-const letters = {
-    hidden: { opacity: 0, y: 100 },
-    show: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            ease: [0.6, 0.01, -0.05, 0.95],
-            duration: 0.5,
-        },
-    },
-};
+
 const Home = () => {
     const text1 = "Hello";
     const text2 = "Welcome to my GitHub";
@@ -93,7 +82,7 @@ const Home = () => {
                         <motion.img
                             src={pic}
                             alt="github octocat"
-                            className='logo md:w-[26.25rem] p-8 aspect-square w-44 absolute top-[10%]  md:top-[17%] lg:right-[20%] object-contain'
+                            className='logo md:w-[26.25rem] left-[10%] p-8 aspect-square w-44 absolute top-[10%]  md:top-[17%] lg:right-[20%] object-contain'
                             layoutId='entranceImg'
                             />
                     </div>

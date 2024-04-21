@@ -38,7 +38,7 @@ const Header = () => {
           </p>
           <HeaderLinks />
           <div className='hidden z-10 px-3 pb-3 relative md:flex justify-center'>
-            <button aria-label="toggle theme" onClick={handleTheme}>
+            <button className="invisible" aria-label="toggle theme" onClick={handleTheme}>
               {theme === "light" ? <IoMoonOutline /> : <IoSunnySharp />}
             </button>
           </div>

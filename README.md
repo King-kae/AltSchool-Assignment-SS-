@@ -1,8 +1,17 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# AltSchool Second Semester Exam
 
-Currently, two official plugins are available:
+### Instructions
+- Show a page listing all your repositories on GitHub with pagination enabled (Bonus: Implement Search and Filter)
+- Create another page showing data for a single repo when clicked from the page. Show all repos using nested routes while using all the necessary tools in React.
+- Implement an Error Boundary (show a page to test the error boundary)
+- A 404 page  (show a page to test the 404 page).
+- Good Layout, UI, and Designs are essential. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Hosted Link
+[Link](https://alt-school-assignment-ss.vercel.app/)
+
+
+### Landing Page
+
+![Sceenshot](./src/assets/Screenshot%20(14).png)

@@ -31,7 +31,7 @@ const RepoMain = ({ repos }) => {
           }`}
         >
           <button disabled={page <= 1} onClick={() => setPage((p) => p - 1)}>
-            <FaArrowCircleLeft className="text-xl hover:text-blue " />
+            <FaArrowCircleLeft className="text-2xl hover:text-blue " />
           </button>
           <div className="rounded-lg border-solid border-4 border-blue">
             {Array.from({ length: pageLength }, (_, i) => i + 1).map((btn) => (
@@ -51,7 +51,7 @@ const RepoMain = ({ repos }) => {
             disabled={page >= pageLength}
             onClick={() => setPage((p) => p + 1)}
           >
-            <FaArrowCircleRight className="text-xl hover:text-blue " />
+            <FaArrowCircleRight className="text-2xl hover:text-blue " />
           </button>
         </div>
       </main>
