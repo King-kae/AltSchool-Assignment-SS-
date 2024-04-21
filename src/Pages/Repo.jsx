@@ -49,7 +49,7 @@ const Repo = () => {
     <>
       <section className='dark:text-neutral-50 text-zinc-700 dark:bg-zinc-700'>
         <div className='repo-container py-6 md:py-12'>
-          <div className='flex flex-col md:flex-row justify-between'>
+          <div className='flex flex-col md:flex-row gap-4 md:px-4 px-6 justify-between'>
             <div className='mt-8 md:w-1/3  '>
               <motion.img
                 src={octocat}
@@ -89,27 +89,27 @@ const Repo = () => {
                   quisquam deserunt. Quam!
                 </p>
                 <div className='flex gap-2 items-center'>
-                  <p className='flex gap-x-2 items-center  text-3xl md:text-5xl'>
+                  <p className='flex gap-x-2 items-center  text-xl md:text-2xl'>
                     <span className=''>
                       <AiOutlineStar />
                     </span>
-                    <span className='text-xl md:text-2xl'>
+                    <span className='text-xl md:text-xl'>
                       {parent ? parent.stargazers_count : stargazers_count}
                     </span>
                   </p>
-                  <p className='flex gap-x-2 items-center  text-3xl md:text-5xl'>
+                  <p className='flex gap-x-2 items-center  text-xl md:text-2xl'>
                     <span className=''>
                       <FiEye />
                     </span>
-                    <span className='text-xl md:text-2xl'>
+                    <span className='text-xl md:text-xl'>
                       {parent ? parent.watchers_count : watchers_count}
                     </span>
                   </p>
-                  <p className='flex gap-x-2 items-center  text-3xl md:text-5xl'>
+                  <p className='flex gap-x-2 items-center  text-xl md:text-2xl'>
                     <span className=''>
                       <BiGitRepoForked />
                     </span>
-                    <span className='text-xl md:text-2xl'>
+                    <span className='text-xl md:text-xl'>
                       {parent ? parent.forks_count : forks_count}
                     </span>
                   </p>
@@ -120,7 +120,7 @@ const Repo = () => {
               <div className='mt-4'>
                 <a
                   href={html_url}
-                  className='block w-32 text-lg text-center py-2 bg-gitGreen text-neutral-50 hover:bg-gitGreen/25 transition-all duration-300'
+                  className='block w-32 text-lg rounded-full border text-center py-2 focus:ring-blue  text-blue border-blue hover:text-white hover:bg-blue transition-all duration-300'
                   target='_blank'
                 >
                   Visit Page

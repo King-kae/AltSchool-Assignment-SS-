@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
 import pic from "../assets/react.svg"
-
+import './home.css'
 
 const letterContainer = {
     hidden: {
@@ -93,7 +93,7 @@ const Home = () => {
                         <motion.img
                             src={pic}
                             alt="github octocat"
-                            className='md:w-[26.25rem] p-8 aspect-square w-44 absolute top-[10%]  md:top-[17%] lg:right-[20%] object-contain'
+                            className='logo md:w-[26.25rem] p-8 aspect-square w-44 absolute top-[10%]  md:top-[17%] lg:right-[20%] object-contain'
                             layoutId='entranceImg'
                             />
                     </div>
