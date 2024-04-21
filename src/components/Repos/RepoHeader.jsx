@@ -22,11 +22,11 @@ const RepoHeader = ({ repoData }) => {
           <div className='space-y-3 mt-8'>
             <h2 className='text-xl'>{repoData.bio}</h2>
             <div className='flex gap-x-4 items-center'>
-                <CiMail className='mt-[0.4rem]' />
+                <CiMail className='mt-[0.4rem] text-xl' />
                 <a href="mailto:kayode.raimi123@gmail.com">kayode.raimi123@gmail.com</a>
             </div>
             <div className='flex gap-x-4 items-center'>
-                <AiOutlineUsergroupAdd className='mt-[0.4rem]' />
+                <AiOutlineUsergroupAdd className='mt-[0.4rem] text-xl' />
                 <p>
                     {repoData.followers} followers . {repoData.following} following
                 </p>

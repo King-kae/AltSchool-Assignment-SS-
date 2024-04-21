@@ -27,18 +27,18 @@ const RepoMain = ({ repos }) => {
           ))}
         </ul>
         <div 
-          className={`flex flex-col items-start gap-y-3  md:flex-row justify-between md:items-center py-8 border-t border-grey-100  dark:border-neutral-400 ${value ? "hidden" : ""
+          className={`flex flex-row items-start gap-y-3  md:flex-row justify-between md:items-center py-8 ${value ? "hidden" : ""
           }`}
         >
           <button disabled={page <= 1} onClick={() => setPage((p) => p - 1)}>
-            <FaArrowCircleLeft />
+            <FaArrowCircleLeft className="text-xl hover:text-blue " />
           </button>
-          <div className="">
+          <div className="rounded-lg border-solid border-4 border-blue">
             {Array.from({ length: pageLength }, (_, i) => i + 1).map((btn) => (
               <button
                 key={`${btn}-i`}
-                className={`${page === btn
-                    ? "bg-gitGreen text-neutral-50"
+                className={`hover:bg-blue ${page === btn
+                    ? "bg-blue text-neutral-50"
                     : "bg-neutral-200 dark:bg-neutral-700"
                   }  px-3 transition-colors duration-300`}
                 onClick={() => setPage(btn)}
@@ -51,7 +51,7 @@ const RepoMain = ({ repos }) => {
             disabled={page >= pageLength}
             onClick={() => setPage((p) => p + 1)}
           >
-            <FaArrowCircleRight />
+            <FaArrowCircleRight className="text-xl hover:text-blue " />
           </button>
         </div>
       </main>
