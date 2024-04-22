@@ -6,7 +6,7 @@ const RepoForm = ({ value, setValue }) => {
         e.preventDefault()
     }
     return (
-        <form className='mb-4 mt-4' onSubmit={handleSubmit}>
+        <form className='mb-4 mt-4 flex justify-between' onSubmit={handleSubmit}>
             <label htmlFor="search" className='sr-only'>
                 Search Repositories
             </label>
