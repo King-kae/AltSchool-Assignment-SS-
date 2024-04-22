@@ -38,7 +38,7 @@ const liVariants = {
 };
 
 const HeaderMenu = ({ open, theme, handleTheme, toggleMenu }) => {
-    const activeClassName = "font-bold"
+    const activeClassName = "font-bold text-blue"
 
     return (
         
