@@ -21,7 +21,7 @@ const RepoForm = ({ value, setValue }) => {
             />
             <button 
                 type='submit'
-                className='bg-blue text-neutral-50 ml-3 px-2 py-1 rounded-md text-sm md:text-lg'
+                className='bg-blue text-neutral-50 ml-3 px-2 py-1 rounded-md md:text-lg'
             >
                 {" "}
                 Search

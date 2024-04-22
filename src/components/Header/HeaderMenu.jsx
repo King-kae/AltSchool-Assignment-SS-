@@ -47,20 +47,36 @@ const HeaderMenu = ({ open, theme, handleTheme }) => {
             className='bg-neutral-300 dark:bg-zinc-700 dark:text-neutral-50 flex flex-col md:hidden fixed z-10 space-y-3 p-6 text-zinc-700 w-36 right-4 rounded-xl mt-4 font-semibold  overflow-hidden'
         >
             <motion.li variants={liVariants} className={`z-10  hover:text-blue transition duration-500 ease-in-out`}>
-                <NavLink to='/about'
+                <NavLink 
+                    to='/about'
                     className={({ isActive }) => (isActive ? activeClassName : undefined)}
                 >
                     About
                 </NavLink>
             </motion.li>
             <motion.li variants={liVariants} className='z=10 hover:text-blue transition duration-500 ease-in-out'>
-                <NavLink to='/repos'>Repos</NavLink>
+                <NavLink 
+                    to='/repos'
+                    className={({ isActive }) => (isActive ? activeClassName : undefined)}
+                    >
+                        Repos
+                    </NavLink>
             </motion.li>
             <motion.li variants={liVariants} className='z-10 hover:text-blue transition duration-500 ease-in-out'>
-                <NavLink to='/errorpage'>404</NavLink>
+                <NavLink 
+                    to='/errorpage'
+                    className={({ isActive }) => (isActive ? activeClassName : undefined)}
+                    >
+                        404
+                    </NavLink>
             </motion.li>
             <motion.li variants={liVariants} className='z-10 hover:text-blue transition duration-500 ease-in-out'>
-                <NavLink to='/errorboundary'>Error Boundary</NavLink>
+                <NavLink 
+                    to='/errorboundary'
+                    className={({ isActive }) => (isActive ? activeClassName : undefined)}
+                    >
+                        Error Boundary
+                    </NavLink>
             </motion.li>
             <motion.li variants={liVariants} className='z-10 hover:text-blue transition duration-500 ease-in-out'>
                 <button className='invisible' aria-label='toggle theme' onClick={handleTheme}>

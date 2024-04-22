@@ -13,15 +13,8 @@ const Header = () => {
   const handleMenu = () => {
     setOpenMenu((p) => !p);
   };
-  const [theme, setTheme] = useState("light");
 
-  const handleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
+
 
   return (
     <>
@@ -38,13 +31,13 @@ const Header = () => {
           </p>
           <HeaderLinks />
           <div className='hidden z-10 px-3 pb-3 relative md:flex justify-center'>
-            <button className="invisible" aria-label="toggle theme" onClick={handleTheme}>
-              {theme === "light" ? <IoMoonOutline /> : <IoSunnySharp />}
+            <button className="invisible" aria-label="toggle theme">
+              <IoMoonOutline />
             </button>
           </div>
           <HeaderMenuBtn openMenu={openMenu} toggleMenu={handleMenu} />
         </nav>
-         <HeaderMenu open={openMenu} theme={theme} handleTheme={handleTheme} /> 
+         <HeaderMenu open={openMenu}  /> 
       </header>
       <Outlet />
     </>
