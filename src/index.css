@@ -31,7 +31,11 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
+@layer components {
+  .repo-container {
+    @apply max-w-7xl mx-auto px-4 md:px-8;
+  }
+}
 
 
 
