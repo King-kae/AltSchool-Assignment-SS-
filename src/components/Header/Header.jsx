@@ -10,7 +10,7 @@ import { FaHome } from "react-icons/fa";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
-  const handleMenu = () => {
+  const toggleMenu = () => {
     setOpenMenu((p) => !p);
   };
 
@@ -35,9 +35,9 @@ const Header = () => {
               <IoMoonOutline />
             </button>
           </div>
-          <HeaderMenuBtn openMenu={openMenu} toggleMenu={handleMenu} />
+          <HeaderMenuBtn openMenu={openMenu} toggleMenu={toggleMenu} />
         </nav>
-         <HeaderMenu open={openMenu}  /> 
+         <HeaderMenu open={openMenu} toggleMenu={toggleMenu} /> 
       </header>
       <Outlet />
     </>

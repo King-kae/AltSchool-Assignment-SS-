@@ -37,12 +37,15 @@ const liVariants = {
     },
 };
 
-const HeaderMenu = ({ open, theme, handleTheme }) => {
+const HeaderMenu = ({ open, theme, handleTheme, toggleMenu }) => {
     const activeClassName = "font-bold"
 
     return (
+        
         <motion.ul
             variants={ulVariants}
+            initial={false}
+            onClick={toggleMenu}
             animate={open ? "open" : "closed"}
             className='bg-neutral-300 dark:bg-zinc-700 dark:text-neutral-50 flex flex-col md:hidden fixed z-10 space-y-3 p-6 text-zinc-700 w-36 right-4 rounded-xl mt-4 font-semibold  overflow-hidden'
         >
